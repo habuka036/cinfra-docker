@@ -6,5 +6,6 @@ RUN apt-get update && \
     pip install awscli && \
     apt-add-repository ppa:duggan/jo --yes && \
     apt-get update -q && \
-    apt-get install jo
+    apt-get install jo \
+    curl -fsSL https://goss.rocks/install | GOSS_DST=/bin sh
 
