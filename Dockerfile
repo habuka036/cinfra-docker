@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
-    apt-get -y install curl git jq python-pip software-properties-common && \
+    apt-get -y install curl git jq nkf python-pip software-properties-common && \
     pip install --upgrade pip && \
     pip install awscli && \
     apt-add-repository ppa:duggan/jo --yes && \
